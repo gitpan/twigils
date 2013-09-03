@@ -55,7 +55,7 @@ my %WriteMakefileArgs = (
     "Test::Fatal" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "clean" => {
     "FILES" => "callchecker0.h"
   },

@@ -12,6 +12,7 @@ lib/twigils.pm
 t/array.t
 t/basic.t
 t/hash.t
+t/not_in_pad_fatal.t
 t/release-eol.t
 t/release-no-tabs.t
 t/release-pod-coverage.t
