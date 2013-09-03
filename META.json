@@ -17,6 +17,7 @@
       "configure" : {
          "requires" : {
             "Devel::CallChecker" : "0",
+            "Devel::CallParser" : "0",
             "ExtUtils::MakeMaker" : "6.30",
             "IO::File" : "0"
          }
@@ -60,7 +61,7 @@
          "web" : "http://github.com/rafl/twigils"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018000"

@@ -3,7 +3,7 @@ BEGIN {
   $twigils::AUTHORITY = 'cpan:FLORA';
 }
 {
-  $twigils::VERSION = '0.01'; # TRIAL
+  $twigils::VERSION = '0.02'; # TRIAL
 }
 # ABSTRACT: Perl 6 style twigils for Perl 5
 

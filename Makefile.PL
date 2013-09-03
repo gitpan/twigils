@@ -32,6 +32,7 @@ my %WriteMakefileArgs = (
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "Devel::CallChecker" => 0,
+    "Devel::CallParser" => 0,
     "ExtUtils::MakeMaker" => "6.30",
     "IO::File" => 0
   },
@@ -54,7 +55,7 @@ my %WriteMakefileArgs = (
     "Test::Fatal" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "clean" => {
     "FILES" => "callchecker0.h"
   },

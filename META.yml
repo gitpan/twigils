@@ -7,6 +7,7 @@ build_requires:
   Test::More: 0
 configure_requires:
   Devel::CallChecker: 0
+  Devel::CallParser: 0
   ExtUtils::MakeMaker: 6.30
   IO::File: 0
 dynamic_config: 1
@@ -29,7 +30,7 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=twigils
   homepage: http://metacpan.org/release/twigils
   repository: git://github.com/rafl/twigils.git
-version: 0.01
+version: 0.02
 x_Dist_Zilla:
   perl:
     version: 5.018000
