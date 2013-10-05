@@ -3,7 +3,7 @@ BEGIN {
   $twigils::AUTHORITY = 'cpan:FLORA';
 }
 {
-  $twigils::VERSION = '0.03'; # TRIAL
+  $twigils::VERSION = '0.04'; # TRIAL
 }
 # ABSTRACT: Perl 6 style twigils for Perl 5
 
@@ -34,9 +34,20 @@ sub intro_twigil_our_var {
 }
 
 sub import {
-    if (defined $_[1] && $_[1] eq 'fatal_lookup_errors') {
-        $^H{__PACKAGE__ . '/not_in_pad_fatal'} = 1;
-        splice(@_, 1, 1, ());
+    my ($class, @opts) = @_;
+
+    @_ = ($class);
+    while (my $opt = shift @opts) {
+        if ($opt eq 'fatal_lookup_errors') {
+            $^H{__PACKAGE__ . '/not_in_pad_fatal'} = 1;
+        }
+        elsif ($opt eq 'allowed_twigils') {
+            $^H{__PACKAGE__ . '/no_autovivification'} = 1;
+            $^H{__PACKAGE__ . '/twigils'} = shift @opts;
+        }
+        else {
+            push @_, $opt;
+        }
     }
 
     goto &Exporter::import;

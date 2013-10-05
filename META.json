@@ -61,7 +61,7 @@
          "web" : "http://github.com/rafl/twigils"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018000"
